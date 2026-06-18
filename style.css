@@ -1,0 +1,83 @@
+.low-opacity-bg-image {
+    background-image: url("backgroundimage.png");
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    min-height: 700px;
+    position: relative;
+    isolation: isolate;
+}
+.low-opacity-bg-image::after {
+content: '';
+position: absolute;
+z-index: -1;
+inset: 0; 
+background: white;
+opacity: .57;
+}
+
+h1 {color:darkred;
+    text-align: center;
+    font-family: Eternalove;
+}
+
+img {
+    width: 200px;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-top: -270px;
+
+}
+h1 {
+    font-size: 40px;
+    color: rgb(2, 2, 50);
+    margin-left: 600px;
+    margin-right: 200px;
+    margin-top: -250px;
+    font-family: Eternalove;
+}
+h3 {
+    font-size: 28px;
+    color: rgb(2, 15, 73);
+    margin: .15px;
+    margin-right: 200px;
+    margin-left: 600px;
+    margin-top: -150px;
+    font-family: Eternalove;
+}
+
+
+.logo {
+    width: 98px;
+    margin-bottom: -2px;
+    margin-right: 1000px;
+    margin-left: 0px;
+    
+}
+
+.horizontal-menu {
+    font-size: 28px;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* محاذاة العناصر في الوسط */
+    margin: 30px;
+}
+
+.horizontal-menu li {
+    margin: 0 15px; /* مسافة بين العناصر */
+}
+
+.horizontal-menu a {
+    text-decoration: none;
+    color: #0b1556;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.horizontal-menu a:hover {
+    background-color: #b0aeae;
+    color: #080338;
+}
